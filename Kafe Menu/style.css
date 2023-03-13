@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    font-family:monospace;
+}
+.menu{
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+.heading{
+    background-color: #cb202d;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.heading h1{
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding-bottom: 10px ;
+}
+.heading h4{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+/*baslık bitti*/
+/*yiyecek baslangıcı*/
+
+.food-items{
+    display: grid;
+    position:relative;
+    grid-template-rows:auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.food-items img{
+    position: relative;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+h1{
+    grid-column: 1/-1;
+    display: grid;
+}
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px; 
+    grid-row-gap: 15px;
+}
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+.price{
+    text-align: right;
+}
+.details p{
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 28px;
+    align-self: stretch;
+}
+.details button{
+    background-color: #cb202d;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+}
+button:hover{
+    transform: scale(0.70);
+    background-color: black;
+    color: whitesmoke;
+}
